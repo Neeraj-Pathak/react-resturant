@@ -1,0 +1,39 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mitr:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body{
+  background-color:#eeefeb;
+  ;
+}
+
+.menu-links-container{
+    width: 100vw;
+    border-radius: 4px 4px 0px 0px ;
+  }
+  
+  .menu-links{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: 28%;
+      margin-right: 28%;
+      text-decoration: none;
+      color: #D8D2C2;
+      margin-top: 5px;
+      
+  }
+  
+  
+  .menu-links .menu-btn{
+    color: #eeefeb;
+  }
+
+  .menu-btn:hover{
+    color: #494449;
+  }
+
+  .menu-links li:hover{
+      background-color: #D8D2C2;
+      color: #B17457;
+  } */
+
+  

@@ -1,0 +1,150 @@
+.breakfast-main {
+    background-size: cover;
+    height: 600px;
+    margin: 0% 4% 1% 4%;
+    border-radius: 25px;
+    position: relative; /* Set as relative for absolute children */
+}
+
+.breakfast-container-title {
+    border-radius: 0px 0px 20px 0px;
+    padding: 4px 10px; /* Added padding for better spacing */
+    background-color: beige;
+    color: #B17457; 
+    position: absolute; /* Fixed relative to parent */
+    z-index: 1; /* Ensures title is above background */
+}
+
+.breakfast-scroll-container {
+    overflow-y: auto;
+    height: calc(100% ); 
+}
+
+.breakfast-scroll-container::-webkit-scrollbar{
+    display: none;
+}
+
+.breakfast-main::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+.breakfast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0% 2% 0% 2%;
+    height: 150px;
+}
+
+.breakfast-list {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Left-Menu {
+    width: 40vw;
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.card-content {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: beige;
+    padding-bottom: 5px;
+}
+
+.card-price {
+    font-size: 1.2rem;
+    color: beige;
+}
+
+.card-description {
+    font-size: 1rem;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.scroll-to-top {
+    position: absolute;
+    bottom: 30px; 
+    right: 30px; 
+    background-color: #B17457; 
+    color: white; 
+    border: none; 
+    border-radius: 25px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    z-index: 1000;
+    transition: background-color 0.3s; 
+}
+
+.scroll-to-top:hover {
+    background-color: #A16348; 
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+
+    .breakfast-container-title{
+    border-radius: 0px 0px 20px 0px;
+    background-color: beige;
+    color: #B17457; 
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1; 
+    top: 0px;
+    }
+
+    .card-content {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        font-weight: 500;
+        color: beige;
+        padding-bottom: 5px;
+    }
+    
+    .card-price {
+        font-size: 1rem;
+        color: beige;
+    }
+    
+    .card-description {
+        font-size: 0.5rem;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    .scroll-to-top {
+        position: absolute;
+        background-color: #B17457; 
+        color: white; 
+        border: none; 
+        border-radius: 25px; 
+        padding: 10px 15px; 
+        font-size: 0.5rem; 
+        cursor: pointer; 
+        z-index: 1000;
+        transition: background-color 0.3s; 
+    }
+
+}

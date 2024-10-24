@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mitr:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.rest-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://wallpapercat.com/w/full/f/7/9/584472-3840x2160-desktop-4k-restaurant-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 500px;
+    height: 400px;
+    position: relative;
+    flex-wrap: wrap;
+    place-content: stretch center;
+    align-items: center;
+    /* padding-top: 115px;
+    padding-bottom: 115px; */
+    display: flex;
+    cursor: pointer;
+}  
+
+
+.rest-image-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eeefeb;
+    font-family: "poppins";
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px 42px 2px 42px;
+    font-size: 6rem;
+}
+
+@media (max-width: 768px) {
+    .rest-image {
+      background-size: 130% 100%;
+      height: 400px;
+      position: relative;
+      flex-wrap: wrap;
+      place-content: center;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+    }
+  
+    .rest-image-text {
+      font-size: 2rem; 
+    }
+}
+

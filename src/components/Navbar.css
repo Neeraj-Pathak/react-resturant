@@ -19,7 +19,7 @@ a{
   text-transform: uppercase
 }
 
-.container ul li a:hover{
+.container ul li a:hover,.container ul li a:active{
   background-color: #494449;
   color: #eeefeb;
 }
@@ -106,9 +106,10 @@ header{
     height: 40vh;
     top: -800px;
     right: 0;
+    z-index: 1;
   }
   .nav-link.active{
-    top:10%;
+    top:14%;
     transition: all 0.7s ease-in;
   }
 }

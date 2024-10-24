@@ -1,0 +1,57 @@
+
+  
+  .about-us {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff; /* White background for the content area */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #8b6f51; /* Medium beige for headers */
+  }
+  
+  h1 {
+    border-bottom: 2px solid #8b6f51; /* Underline for the main title */
+    padding-bottom: 10px;
+  }
+  
+  h2 {
+    margin-top: 1.5rem;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team-member {
+    flex: 1 1 calc(50% - 20px); /* Two members per row, adjusting for gap */
+    background-color: #f0e3d1; /* Slightly darker beige for team member cards */
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .team-member h3 {
+    margin: 0.5rem 0;
+  }
+  
+  .team-member p {
+    margin: 0.5rem 0;
+  }
+  

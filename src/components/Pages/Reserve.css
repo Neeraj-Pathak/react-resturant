@@ -1,0 +1,189 @@
+/* Full-page layout with flexbox */
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Form Styling */
+  .app {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .reservation-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+    outline: none;
+  }
+  
+  .submit {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+  }
+  
+  .submit:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Slider Styling */
+  .slider {
+    width: 45%;
+    position: relative;
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .slider-image {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Hover effect for slider buttons */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .app,
+    .slider {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Responsiveness */
+@media (max-width: 900px) {
+  .container2 {
+    flex-direction: column;
+    height: auto; /* Allow the container to adjust height */
+  }
+
+  .app,
+  .slider {
+    width: 90%;
+    margin: 0 auto 20px; /* Center elements with auto margins */
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem; /* Decrease heading size */
+  }
+
+  .app {
+    padding: 15px 20px; /* Reduce padding */
+  }
+
+  label {
+    font-size: 0.9rem; /* Slightly smaller label font */
+  }
+
+  input {
+    padding: 10px; /* Reduce input padding */
+    font-size: 0.9rem; /* Slightly smaller input font */
+  }
+
+  .submit {
+    font-size: 0.9rem; /* Smaller button font */
+  }
+
+  .prev,
+  .next {
+    padding: 12px; /* Smaller button padding */
+    font-size: 16px; /* Smaller font size for navigation buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    margin: 10px; /* Smaller margin for mobile */
+    border-radius: 8px; /* Less rounding for mobile */
+  }
+
+  .slider {
+    width: 100%; /* Full width for slider on small screens */
+  }
+
+  .slider-image {
+    border-radius: 8px; /* Slightly less rounding for mobile */
+  }
+}
+  
